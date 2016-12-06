@@ -1,0 +1,109 @@
+body.landing.bg {
+    background-image: url(../images/mockup/1440.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 3200px;
+}
+
+.mainSection {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.mainSection h2 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 56px;
+}
+
+.mainSection  p {
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 25px;
+  font-size: 21px;
+  line-height: 36px;
+}
+
+.mainSection.center {
+  text-align: center;
+}
+
+.mainSection.center h2 {
+  margin-left: 481px;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.mainSection.center  p {
+  margin: 28px 0 0 468px;
+}
+
+.mainSection.center section {
+  width: 1440px;
+  top: 193px;
+}
+
+.mainSection section {
+  position: absolute;
+  top: 192px;
+  width: 565px;
+}
+
+.mainSection.left section {
+  left: 393px;
+}
+
+.mainSection.right section {
+  right: -157px;
+}
+
+.mainSection.center section nav {
+  margin-top: 70px;
+  font-size: 0;
+}
+
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+
+.mainSection.center footer {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.mockup {
+  position: absolute;
+  background-size: cover;
+}
+
+#mockup1 {
+  top: 115px;
+  right: -116px;
+  width: 732px;
+  height: 660px;
+  background-image: url(../images/about.png);
+}
+
+#mockup2 {
+  top: 97px;
+  left: 100px;
+  width: 532px;
+  height: 670px;
+  background-image: url(../images/landing/landing-mockup-2.jpg);
+}
+
+#mockup3 {
+  top: 97px;
+  right: -732px;
+  width: 1348px;
+  height: 773px;
+  border-radius: 5px;
+  background-image: url(../images/landing/landing-mockup-3.jpg);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
