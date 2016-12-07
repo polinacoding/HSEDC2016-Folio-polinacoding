@@ -1,21 +1,47 @@
 .menubar {
   width: 100%;
+<<<<<<< HEAD
   z-index: 1;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+=======
+>>>>>>> origin/master
 }
 
 .menubar div {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   height: 20px;
+=======
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+>>>>>>> origin/master
   padding: 20px;
 }
 
 .logo {
   display: block;
+<<<<<<< HEAD
   width: 84px;
   height: 25px;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
+=======
+  width: 180px;
+  height: 16px;
+  background-image: url(../images/logo.svg);
+}
+
+.about {
+  font-size: 14px;
+  line-height: 50px;
+  color: rgba(0,0,0,.2);
+  transition: all .1s ease;
+}
+
+.about:hover {
+  color: rgba(0,0,0,.4);
+>>>>>>> origin/master
 }
