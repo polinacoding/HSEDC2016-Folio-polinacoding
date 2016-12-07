@@ -1,80 +1,92 @@
-body.landing.bg {
-    background-image: url(../images/mockup/1440.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 3200px;
+.landingWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
 
-.mainSection {
+body.landing * {
+
+  transition: all .3s ease;
+}
+
+
+.box {
   position: relative;
   width: 1440px;
   height: 800px;
   overflow: hidden;
 }
 
-.mainSection h2 {
+.box h2 {
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: bold;
   font-size: 44px;
-  line-height: 56px;
+  line-height: 55px;
 }
 
-.mainSection  p {
-  font-family: 'PT Sans', sans-serif;
-  margin-top: 25px;
+.box p {
   font-size: 21px;
   line-height: 36px;
+  margin-top: 26px;
 }
 
-.mainSection.center {
-  text-align: center;
-}
-
-.mainSection.center h2 {
-  margin-left: 481px;
-  font-size: 44px;
-  line-height: 54px;
-}
-
-.mainSection.center  p {
-  margin: 28px 0 0 468px;
-}
-
-.mainSection.center section {
-  width: 1440px;
+.box section {
+  position: absolute;
   top: 193px;
 }
 
-.mainSection section {
-  position: absolute;
-  top: 192px;
-  width: 565px;
+.box.center {
+  text-align: center;
+  background-color: #879696;
 }
 
-.mainSection.left section {
-  left: 393px;
-}
-
-.mainSection.right section {
-  right: -157px;
-}
-
-.mainSection.center section nav {
-  margin-top: 70px;
-  font-size: 0;
-}
-
-.mainSection.center section nav a {
-  margin: 0 10px;
-}
-
-.mainSection.center footer {
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.box.center section {
   width: 100%;
-  padding-bottom: 35px;
+}
+
+.box.center h2 {
+  font-size: 44px;
+  line-height: 55px;
+}
+
+.box.center p {
+  margin-top: 26px;
+}
+
+.box.left {
+  background-color: #fcfffe;
+}
+
+.box.left section {
+  left: 160px;
+}
+
+.box.right {
+  background-color: #879696;
+}
+
+.box.right section {
+  right: 306px;
+}
+
+.box section figure {
+  width: 30px;
+  height: 4px;
+  background-image: url(../images/pattern.png);
+}
+
+.box.left section figure {
+  margin-top: 59px;
+}
+
+.box.right section figure {
+  margin-top: 59px;
 }
 
 .mockup {
@@ -83,27 +95,215 @@ body.landing.bg {
 }
 
 #mockup1 {
-  top: 115px;
-  right: -116px;
-  width: 732px;
-  height: 660px;
-  background-image: url(../images/about.png);
+  top: 233px;
+  left: 749px;
+  width: 531px;
+  height: 567px;
+  background-image: url(../images/landing/about.png);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
 
-#mockup2 {
-  top: 97px;
-  left: 100px;
-  width: 532px;
-  height: 670px;
-  background-image: url(../images/landing/landing-mockup-2.jpg);
+#mockup2_1 {
+  top: 193px;
+  left: 79px;
+  width: 140px;
+  height: 317px;
+  background-image: url(../images/landing/about.png);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+#mockup2_2 {
+  top: 193px;
+  left: 253px;
+  width: 140px;
+  height: 395px;
+  background-image: url(../images/landing/works.png);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+#mockup2_3 {
+  top: 193px;
+  left: 426px;
+  width: 140px;
+  height: 474px;
+  background-image: url(../images/landing/work.png);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
 }
 
 #mockup3 {
-  top: 97px;
-  right: -732px;
-  width: 1348px;
-  height: 773px;
-  border-radius: 5px;
-  background-image: url(../images/landing/landing-mockup-3.jpg);
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+  top: 343px;
+  left: 639px;
+  width: 761px;
+  height: 404px;
+  background-image: url(../images/landing/screens.png);
+}
+
+@media screen and (max-width: 1440px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .landingWrapper {
+    width: 100%;
+  }
+
+  .box {
+    width: 1180px;
+    height: 568px;
+  }
+
+  .box h2 {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .box p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 18px;
+  }
+
+  .box section {
+    position: absolute;
+    top: 137px;
+    right: 136px;
+  }
+
+  .box.center {
+    text-align: center;
+    background-color: #879696;
+    height: 526px;
+  }
+
+  .box.center section {
+    width: 100%;
+  }
+
+  .box.center h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .box.center p {
+    margin-top: 16px;
+  }
+
+  .box.left {
+    height: 610px;
+    /*background-color: #fcfffe;*/
+  }
+
+  .box.left section {
+    left: 54px;
+  }
+
+  .box.right {
+    height: 526px;
+    background-color: #879696;
+  }
+
+  .box.right section {
+    right: 355px;
+  }
+
+  .box section figure {
+    width: 23px;
+    height: 3px;
+    background-image: url(../images/pattern.png);
+  }
+
+  .box.left section figure {
+    margin-top: 42px;
+  }
+
+  .box.right section figure {
+    margin-top: 59px;
+  }
+
+  .menubar {
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  }
+
+  .menubar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    padding: 15px;
+  }
+
+  .logo {
+    display: block;
+    width: 61px;
+    height: 17px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+  }
+
+  .mockup {
+    position: absolute;
+    background-size: cover;
+  }
+
+  #mockup1 {
+    top: 166px;
+    left: 475px;
+    width: 377px;
+    height: 853px;
+    background-image: url(../images/landing/about.png);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_1 {
+    top: 138px;
+    left: 55px;
+    width: 100px;
+    height: 226px;
+    background-image: url(../images/landing/about@2x.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_2 {
+    top: 138px;
+    left: 179px;
+    width: 100px;
+    height: 283px;
+    background-image: url(../images/landing/works@2x.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup2_3 {
+    top: 138px;
+    left: 301px;
+    width: 100px;
+    height: 339px;
+    background-image: url(../images/landing/work@2x.png);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  #mockup3 {
+    top: 243px;
+    left: 396px;
+    width: 540px;
+    height: 287px;
+    background-image: url(../images/landing/screens@2x.png);
+  }
 }
