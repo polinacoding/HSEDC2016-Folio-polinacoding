@@ -148,6 +148,18 @@ body.landing * {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1180px) {
   .landingWrapper {
     width: 100%;
