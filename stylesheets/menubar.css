@@ -1,4 +1,5 @@
 .menubar {
+<<<<<<< HEAD
   position: fixed;
   top: 0px;
   width: 100%;
@@ -45,4 +46,25 @@
     background-repeat: no-repeat;
   }
 
+=======
+width: 100%;
+z-index: 1;
+box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+}
+
+.menubar div{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20px;
+padding: 20px;
+}
+
+.logo {
+display: block;
+width: 84px;
+height: 25px;
+background-image: url(../images/logo.svg);
+background-repeat: no-repeat;
+>>>>>>> origin/master
 }
