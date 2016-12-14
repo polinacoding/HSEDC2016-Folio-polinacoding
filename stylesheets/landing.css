@@ -148,18 +148,6 @@ body.landing * {
   }
 }
 
-@media screen and (max-width: 1366px) {
-  .landingWrapper {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .landingWrapper {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 1180px) {
   .landingWrapper {
     width: 100%;
@@ -184,12 +172,12 @@ body.landing * {
   }
 
   .box footer {
-    margin-top: 703px;
+    margin-top: 491px;
     line-height: 36px;;
   }
 
   .box footer p {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .box.left {
@@ -220,11 +208,11 @@ body.landing * {
   }
 
   .box.left section {
-    left: 184px;
+    left: 192px;
   }
 
   .box.right section {
-    right: 224px;
+    right: 219px;
   }
 
   .box section figure {
@@ -239,7 +227,7 @@ body.landing * {
   }
 
   .box.right section figure {
-    margin-top: 56px;
+    margin-top: 42px;
   }
 
   .mockup {
@@ -249,7 +237,7 @@ body.landing * {
 
   #mockup1 {
     top: 166px;
-    right: 197px;
+    right: 190px;
     width: 379px;
     height: 405px;
     background-image: url(../images/landing/retina/about-artboard@2x.png);
@@ -258,7 +246,7 @@ body.landing * {
 
   #mockup2 {
     top: 138px;
-    left: 184px;
+    left: 192px;
     width: 100px;
     height: 227px;
     background-image: url(../images/landing/retina/about@2x.png);
@@ -267,7 +255,7 @@ body.landing * {
 
   #mockup3 {
     top: 138px;
-    left: 308px;
+    left: 316px;
     width: 100px;
     height: 282px;
     background-image: url(../images/landing/retina/works@2x.png);
@@ -276,7 +264,7 @@ body.landing * {
 
   #mockup4 {
     top: 138px;
-    left: 430px;
+    left: 438px;
     width: 100px;
     height: 339px;
     background-image: url(../images/landing/retina/work@2x.png);
@@ -285,7 +273,7 @@ body.landing * {
 
   #mockup5 {
     top: 243px;
-    right: 115px;
+    right: 107px;
     width: 540px;
     height: 287px;
     background-image: url(../images/landing/retina/screens@2x.png);
