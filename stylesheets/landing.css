@@ -3,16 +3,17 @@
 }
 
 .landing * {
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-body.landing {
+.landing {
   font-family:'PT Sans', sans-serif;
   min-width: 768px;
   background-color: #FAFAFA;
 }
 
-body.landing.bg {
+.landing.bg {
   background-image: url(../images/mockup/mockup-1440.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -35,15 +36,34 @@ body.landing.bg {
 }
 
 .landingWrapper {
-  position: relative;
+  /*position: relative;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
 
   width: 1440px;
   margin: 0 auto;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+}
+
+/*.box.left.p br.compact {
+  display: none;
+}*/
+
+.full {
+  display: block;
+}
+
+.media {
+  display: none;
 }
 
 .box {
@@ -118,7 +138,7 @@ body.landing.bg {
 }
 
 .box.left section figure {
-  margin-top: 58px;
+  margin-top: 56px;
 }
 
 .box.right section figure {
@@ -135,7 +155,7 @@ body.landing.bg {
   right: 160px;
   width: 530px;
   height: 567px;
-  background-image: url(../images/landing/retina/about-artboard@2x.png);
+  background-image: url(../images/landing/default/about-artboard.png);
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
 
@@ -144,7 +164,7 @@ body.landing.bg {
   left: 160px;
   width: 140px;
   height: 317px;
-  background-image: url(../images/landing/retina/about@2x.png);
+  background-image: url(../images/landing/default/about.png);
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
 }
 
@@ -153,7 +173,7 @@ body.landing.bg {
   left: 333px;
   width: 140px;
   height: 395px;
-  background-image: url(../images/landing/retina/works@2x.png);
+  background-image: url(../images/landing/default/works.png);
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
 }
 
@@ -162,7 +182,7 @@ body.landing.bg {
   left: 506px;
   width: 140px;
   height: 474px;
-  background-image: url(../images/landing/retina/work@2x.png);
+  background-image: url(../images/landing/default/work.png);
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
 }
 
@@ -171,7 +191,7 @@ body.landing.bg {
   right: 40px;
   width: 761px;
   height: 404px;
-  background-image: url(../images/landing/retina/screens@2x.png);
+  background-image: url(../images/landing/default/screens.png);
 }
 
 @media screen and (max-width: 1440px) {
@@ -186,26 +206,29 @@ body.landing.bg {
     background-image: url(../images/mockup/mockup-1179.png);
   }
 
+  .full {
+    display: none;
+  }
+
+  .media {
+    display: block;
+  }
+
   .box {
     width: 1180px;
     height: 568px;
-    overflow: hidden;
   }
 
   .box section {
-    position: absolute;
     top: 137px;
   }
 
   .box h2 {
-    font-family: 'PT Sans Caption', sans-serif;
-    font-weight: bold;
     font-size: 30px;
     line-height: 39px;
   }
 
   .box p {
-    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
     margin-top: 18px;
@@ -213,33 +236,14 @@ body.landing.bg {
 
   .box footer {
     margin-top: 491px;
-    line-height: 36px;;
   }
 
   .box footer p {
     font-size: 13px;
   }
 
-  .box.left {
-    background-color: #fcfffe;
-  }
-
-  .box.right,
-  .box.center {
-    background-color: #879696;
-    color: white;
-  }
-
-  .box.center {
-    text-align: center;
-  }
-
   .box.center p {
     margin-top: 18px;
-  }
-
-  .box.center section {
-    width: 100%;
   }
 
   .box.left section {
@@ -251,7 +255,6 @@ body.landing.bg {
   }
 
   .box section figure {
-    margin-top: 56px;
     width: 22px;
     height: 3px;
     background-color: #50E3C2;
@@ -265,18 +268,11 @@ body.landing.bg {
     margin-top: 42px;
   }
 
-  .mockup {
-    background-size: cover;
-    position: absolute;
-  }
-
   #mockup1 {
     top: 166px;
     right: 190px;
     width: 379px;
     height: 405px;
-    background-image: url(../images/landing/retina/about-artboard@2x.png);
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup2 {
@@ -284,8 +280,6 @@ body.landing.bg {
     left: 192px;
     width: 100px;
     height: 227px;
-    background-image: url(../images/landing/retina/about@2x.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup3 {
@@ -293,8 +287,6 @@ body.landing.bg {
     left: 316px;
     width: 100px;
     height: 282px;
-    background-image: url(../images/landing/retina/works@2x.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup4 {
@@ -302,8 +294,6 @@ body.landing.bg {
     left: 438px;
     width: 100px;
     height: 339px;
-    background-image: url(../images/landing/retina/work@2x.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup5 {
@@ -311,7 +301,6 @@ body.landing.bg {
     right: 107px;
     width: 540px;
     height: 287px;
-    background-image: url(../images/landing/retina/screens@2x.png);
   }
 
 @media screen and (max-width: 840px) {
@@ -320,28 +309,17 @@ body.landing.bg {
     background-image: url(../images/mockup/mockup-839.png);
   }
 
+  .full {
+    display: none;
+  }
+
+  .media {
+    display: block;
+  }
+
   .box {
     width: 840px;
     height: 1024px;
-  }
-
-  .box section {
-    position: absolute;
-    top: 137px;
-  }
-
-  .box h2 {
-    font-family: 'PT Sans Caption', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 39px;
-  }
-
-  .box p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: 18px;
   }
 
   .box footer {
@@ -353,27 +331,8 @@ body.landing.bg {
     font-size: 13px;
   }
 
-  .box.left {
-    background-color: #fcfffe;
-  }
-
-  .box.right,
-  .box.center {
-    background-color: #879696;
-    color: white;
-  }
-
-  .box.center {
-    text-align: center;
-  }
-
-  .box.center p {
-    margin-top: 18px;
-  }
-
   .box.center section {
     top: 187px;
-    width: 100%;
   }
 
   .box.left section {
@@ -382,21 +341,6 @@ body.landing.bg {
 
   .box.right section {
     right: 177px;
-  }
-
-  .box section figure {
-    margin-top: 56px;
-    width: 22px;
-    height: 3px;
-    background-color: #50E3C2;
-  }
-
-  .box.left section figure {
-    margin-top: 42px;
-  }
-
-  .box.right section figure {
-    margin-top: 42px;
   }
 
   .mockup {
@@ -409,8 +353,6 @@ body.landing.bg {
     right: 150px;
     width: 543px;
     height: 581px;
-    background-image: url(../images/landing/retina/about-artboard@2x.png);
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup2 {
@@ -418,8 +360,6 @@ body.landing.bg {
     left: 175px;
     width: 140px;
     height: 317px;
-    background-image: url(../images/landing/retina/about@2x.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup3 {
@@ -427,8 +367,6 @@ body.landing.bg {
     left: 348px;
     width: 140px;
     height: 395px;
-    background-image: url(../images/landing/retina/works@2x.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup4 {
@@ -436,8 +374,6 @@ body.landing.bg {
     left: 521px;
     width: 140px;
     height: 475px;
-    background-image: url(../images/landing/retina/work@2x.png);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
   }
 
   #mockup5 {
@@ -445,6 +381,23 @@ body.landing.bg {
     left: 156px;
     width: 761px;
     height: 404px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 {
+    background-image: url(../images/landing/retina/about-artboard@2x.png);
+  }
+  #mockup2 {
+    background-image: url(../images/landing/retina/about@2x.png);
+  }
+  #mockup3 {
+    background-image: url(../images/landing/retina/works@2x.png);
+  }
+  #mockup4 {
+    background-image: url(../images/landing/retina/work@2x.png);
+  }
+  #mockup5 {
     background-image: url(../images/landing/retina/screens@2x.png);
   }
 }
